@@ -57,7 +57,7 @@ CONFIG_SVC() {
 
 NODEJS() {
     echo -n "Configure Yum Remos for nodejs:"
-    curl -sL https://rpm.nodesource.com/setup_lts.x | bash >> /tmp/${COMPONENT}.log 
+    curl -sL https://rpm.nodesource.com/setup_16.x | bash >> /tmp/${COMPONENT}.log 
     stat $?
 
     echo -n "Installing nodejs:"
